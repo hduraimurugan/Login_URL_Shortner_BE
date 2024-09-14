@@ -8,10 +8,10 @@ const app = express();
 
 // Array of allowed origins
 const allowedOrigins = [
-    "https://login-frontend-iota.vercel.app", 
+    "https://login-url-shortener-fe.vercel.app/", 
     "http://localhost:5173" // Add your additional URL here
   ];
-  
+
 app.use(cors({
     origin: (origin, callback) => {
       // Check if the origin is in the allowed origins list or if there's no origin (for server-to-server requests)
