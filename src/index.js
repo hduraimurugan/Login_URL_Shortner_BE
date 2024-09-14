@@ -5,24 +5,26 @@ var cors = require('cors');
 
 const app = express();
 
-
 // Array of allowed origins
 const allowedOrigins = [
-    "https://login-url-shortener-fe.vercel.app/", 
-    "http://localhost:5173" // Add your additional URL here
-  ];
+    "https://login-url-shortener-fe.vercel.app",  // Removed trailing slash
+    "http://localhost:5173" // Localhost for development
+];
 
 app.use(cors({
     origin: (origin, callback) => {
-      // Check if the origin is in the allowed origins list or if there's no origin (for server-to-server requests)
-      if (allowedOrigins.includes(origin) || !origin) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
+        // Log origin to see what is being sent
+        console.log('Origin:', origin);
+
+        // Check if the origin is in the allowed origins list or if there's no origin (for server-to-server requests)
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
     },
     credentials: true
-  }));
+}));
 
 app.use(express.json());
 
