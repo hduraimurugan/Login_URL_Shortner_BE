@@ -1,6 +1,3 @@
-
-
-```markdown
 # URL Shortener API
 
 This project is a URL Shortener API built with Node.js, Express, and MongoDB. It generates short, unique URLs from long URLs using a custom code or automatically generated short IDs. Users can also retrieve existing short URLs based on long URLs.
@@ -22,6 +19,9 @@ Before running the project, ensure you have:
   - `BASEURI`: The base URL for the shortened URLs (e.g., `http://localhost:5000` or a production URL)
 
 ## Getting Started
+
+```markdown
+
 
 1. Clone the repository:
 
@@ -77,6 +77,8 @@ Before running the project, ensure you have:
   - `400`: Custom code already in use
   - `500`: Server error
 
+   ```
+
 ## Code Overview
 
 ### Main Components:
@@ -104,6 +106,6 @@ Before running the project, ensure you have:
 - **URLModel**: Mongoose model representing the URL mapping between long URLs and short codes.
 
 
-```
+
 
 This `README.md` file explains the purpose of the project, how to set it up, the API routes, and a high-level overview of the code structure. Adjust it based on any other specific details of your project!
