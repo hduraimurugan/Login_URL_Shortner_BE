@@ -7,7 +7,7 @@ const app = express();
 
 // Array of allowed origins
 const allowedOrigins = [
-    "https://login-url-shortener-fe.vercel.app",  // Removed trailing slash
+    "https://url-shortene.vercel.app",  // Removed trailing slash
     "http://localhost:5173" // Localhost for development
 ];
 
