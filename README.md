@@ -9,11 +9,14 @@ This project is a URL Shortener API built with Node.js, Express, and MongoDB. It
 - Check for duplicates and reuse short URLs for existing long URLs.
 - Provide a meaningful error if a custom code is already in use.
 
+  [URL Shortener](https://github.com/user-attachments/assets/26fff3a9-d599-4196-8a5a-4000f5ff7012)
+
 ## Prerequisites
 
 Before running the project, ensure you have:
 
-- Node.js installed
+- Node.js installed!
+
 - MongoDB installed and running
 - A `.env` file with the following variables:
   - `BASEURI`: The base URL for the shortened URLs (e.g., `http://localhost:5000` or a production URL)
